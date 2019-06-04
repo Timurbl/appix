@@ -40,7 +40,7 @@ body {
     margin: 0;
 
     font-size: 14px;
-    line-height: 50px;
+    line-height: 20px;
     text-align: center;
 }
 
@@ -54,7 +54,7 @@ body {
 
 .menu__list {
     margin: 0;
-    padding: 20px 0 25px 20px;
+    padding: 20px 0 20px 20px;
     max-width: 700px;
 
     list-style: none;
@@ -312,6 +312,7 @@ body {
 
 .full_description {
     width: 600px;
+    margin-right: 20px;
 }
 
 .full_description__name {
@@ -394,4 +395,95 @@ body {
 
 .copy__description a:hover {
     color: #27b5ff;
+}
+
+
+@media only screen and (max-width : 960px) {
+    .slogan-main {
+        flex-direction: column;
+    }
+    .service-main {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .service {
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (max-width : 930px) {
+    .bottom-content {
+        width: inherit;
+        flex-wrap: wrap;
+    }
+    .bottom-content__employees {
+        margin-left: 30px;
+    }
+    .bottom-content__news {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width : 910px) {
+    .work_with_us {
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    .work_with_us__title{
+        max-width: none;
+        text-align: center;
+
+        margin-top: 30px;
+        padding-top: 0;
+        padding-bottom: 0;
+
+    }
+    .btn_join {
+        margin-bottom: 30px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+    .full_description {
+        width: auto;
+    }
+    .block_news {
+        margin-top: 30px;
+    }
+    .block_news__name {
+        margin-bottom: 8px;
+    }
+}
+
+@media only screen and (max-width : 630px) {
+    .header {
+        margin-bottom: 30px;
+    }
+    .header__logo {
+        display: block;
+    }
+}
+
+@media only screen and (max-width : 590px) {
+    .menu__list {
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+    .user {
+        margin-bottom: 30px;
+    }
+    .user__content {
+        margin-top: 10px;
+    }
+    .bottom-content__news {
+        margin-top: 10px;
+    }
 }
