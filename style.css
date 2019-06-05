@@ -12,6 +12,7 @@ body {
     max-width: 960px;
 }
 .header {
+    padding-top: 30px;
     margin-bottom: 75px;
     position: relative;
 }
@@ -26,10 +27,14 @@ body {
     padding-right: 5px;
 }
 
+.logo_wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .header__logo {
     display: inline-block;
-    padding-top: 30px;
-    padding-right: 40px;
+    margin-right: 40px;
 }
 
 .header__slogan {
@@ -485,5 +490,18 @@ body {
     }
     .bottom-content__news {
         margin-top: 10px;
+    }
+}
+@media only screen and (max-width : 570px) {
+    .menu__list {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .menu__list__item {
+        display: inline;
+        width: 100%;
+    }
+    .menu__list__item a{
+        padding: 10px 20px;
     }
 }
